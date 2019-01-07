@@ -73,16 +73,16 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(SolutionDir)SDL2-2.0.7\include;$(SolutionDir)GLAD_17-11-25\include;$(SolutionDir)glm-0.9.8.5;$(SolutionDir)stb_image;$(SolutionDir)SDL2_Mixer-2.0.2\include;$(SolutionDir)bullet3-2.87\src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)SDL2-2.0.7\lib\x86;$(SolutionDir)SDL2_Mixer-2.0.2\lib\x86;D:\dev\our vidya\mineSweep3D\bullet3-2.87\build\lib\Debug;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)SDL2-2.0.9\include;$(SolutionDir)GLAD_17-11-25\include;$(SolutionDir)glm-0.9.8.5;$(SolutionDir)stb_image;$(SolutionDir)SDL2_Mixer-2.0.2\include;$(SolutionDir)bullet3-2.87\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2-2.0.9\lib\x86;$(SolutionDir)SDL2_Mixer-2.0.2\lib\x86;D:\dev\our vidya\mineSweep3D\bullet3-2.87\build\lib\Debug;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <IncludePath>$(SolutionDir)SDL2-2.0.7\include;$(SolutionDir)GLAD_17-11-25\include;$(SolutionDir)glm-0.9.8.5;$(SolutionDir)stb_image;$(SolutionDir)SDL2_Mixer-2.0.2\include;$(SolutionDir)bullet3-2.87\src;$(IncludePath)</IncludePath>
-    <LibraryPath>$(SolutionDir)SDL2-2.0.7\lib\x86;$(SolutionDir)SDL2_Mixer-2.0.2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)SDL2-2.0.9\include;$(SolutionDir)GLAD_17-11-25\include;$(SolutionDir)glm-0.9.8.5;$(SolutionDir)stb_image;$(SolutionDir)SDL2_Mixer-2.0.2\include;$(SolutionDir)bullet3-2.87\src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)SDL2-2.0.9\lib\x86;$(SolutionDir)SDL2_Mixer-2.0.2\lib\x86;$(LibraryPath)</LibraryPath>
     <TargetName>byzero</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -180,6 +180,7 @@
     <ClCompile Include="sn_gui.cpp" />
     <ClCompile Include="sn_main.cpp" />
     <ClCompile Include="_temp.cpp" />
+    <ClCompile Include="_test_main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="common.hpp" />
@@ -205,6 +206,7 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="shaders.hpp" />
     <ClInclude Include="sn_main.hpp" />
+    <ClInclude Include="_test_main.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="icon1.ico" />
