@@ -98,7 +98,7 @@ void SumShiet::RenderFrame() {
 		ImGui::DragFloat4("Properties", glm::value_ptr(rectangle));
 		ImGui::DragFloat2("Z cutoff", glm::value_ptr(zzone));
 		projection = (isPersp)
-			? glm::perspective(glm::radians(fov), rectangle.y / rectangle.z, zzone.x, zzone.y)
+			? glm::perspective(/*glm::radians(*/fov/*)*/, rectangle.y / rectangle.z, zzone.x, zzone.y)
 			: glm::ortho(rectangle.x, rectangle.y, rectangle.z, rectangle.w, zzone.x, zzone.y);
 	}
 	ImGui::End();
